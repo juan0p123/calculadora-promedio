@@ -24,6 +24,9 @@ jobs:
       - name: Instalamos dependencias
         run: npm install
 
+      - name : Elevamos permisos de Lint
+        run: chmod +x ./node_modules/.bin/eslint
+
       - name: Hacer Lint en el Codigo
         run: npm run lint
 
