@@ -22,6 +22,7 @@
   "description": "",
   "devDependencies": {
     "eslint": "^10.2.0",
+    "eslint-formatter-compact": "^9.0.1",
     "globals": "^17.5.0",
     "jest": "^30.3.0"
   },
