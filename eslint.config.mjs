@@ -8,7 +8,6 @@ export default defineConfig([
       globals: { ...globals.browser, ...globals.node },
     },
     rules: {
-      // Reglas básicas recomendadas
       "no-unused-vars": "error", // Detecta variables no usadas
       "no-undef": "error", // Detecta variables o constantes no definidas
       "no-extra-parens": "error", // Detecta paréntesis extra innecesarios
@@ -16,6 +15,12 @@ export default defineConfig([
       "quotes": ["error", "double"], // Requiere comillas dobles para cadenas de texto
       "eqeqeq": "error", // Obliga a usar comparación estricta (=== en lugar de ==)
       "indent": ["error", 2], // Obliga a una indentación con 2 espacios
+    },
+  },
+  {
+    files: ["**/*.test.js"], // Configuración específica para archivos de prueba
+    languageOptions: {
+      globals: { ...globals.jest }, // Añadimos las variables globales de Jest
     },
   },
 ]);
