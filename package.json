@@ -21,10 +21,12 @@
   "homepage": "https://github.com/juan0p123/calculadora-promedio#readme",
   "description": "",
   "devDependencies": {
+    "@babel/preset-env": "^7.29.2",
     "eslint": "^10.2.0",
     "eslint-formatter-compact": "^9.0.1",
     "globals": "^17.5.0",
-    "jest": "^30.3.0"
+    "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0"
   },
   "dependencies": {
     "express": "^5.2.1"
