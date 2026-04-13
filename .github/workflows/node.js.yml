@@ -27,6 +27,9 @@ jobs:
       - name : Elevamos permisos de Lint
         run: chmod +x ./node_modules/.bin/eslint
 
+      - name: Elevamos permisos de Jest
+        run: chmod +x ./node_modules/.bin/jest
+
       - name: Hacer Lint en el Codigo
         run: npm run lint
 
