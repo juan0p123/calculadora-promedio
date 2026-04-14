@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Instalamos dependencias
+      - name: Instalamos dependenci
         run: npm install
 
       - name : Elevamos permisos de Lint
