@@ -30,6 +30,9 @@ jobs:
       - name: Elevamos permisos de Jest
         run: chmod +x ./node_modules/.bin/jest
 
+      - name: Auditoría de seguridad
+        run: npm audit --audit-level=high
+
       - name: Hacer Lint en el Codigo
         run: npx eslint . -f compact
 
