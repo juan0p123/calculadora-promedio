@@ -36,5 +36,5 @@ jobs:
       - name: Hacer Lint en el Codigo
         run: npx eslint . -f compact
 
-      - name: Test de Aplicacion
+      - name: Test de Aplicacio
         run: npm test
